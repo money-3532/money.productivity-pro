@@ -36,8 +36,6 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 班加罗尔卡片 -->
             <div class="info-card">
               <h3 class="card-city">Bengaluru</h3>
               <p class="card-description">
@@ -45,15 +43,11 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 加德满都卡片 -->
             <div class="info-card">
               <h3 class="card-city">Kathmandu</h3>
               <p class="card-description">When you enter into any new area</p>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 墨尔本卡片 -->
             <div class="info-card">
               <h3 class="card-city">Melbourne</h3>
               <p class="card-description">
@@ -61,8 +55,6 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 卡萨布兰卡卡片 -->
             <div class="info-card">
               <h3 class="card-city">Casablanca</h3>
               <p class="card-description">
@@ -75,8 +67,6 @@
               </div>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 吉隆坡卡片 -->
             <div class="info-card">
               <h3 class="card-city">Kuala Lumpur</h3>
               <p class="card-description">
@@ -84,8 +74,6 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 布里斯托尔卡片 -->
             <div class="info-card">
               <h3 class="card-city">Bristol</h3>
               <p class="card-description">
@@ -94,7 +82,6 @@
               <a href="#" class="card-link">Details →</a>
             </div>
 
-            <!-- 布里斯班卡片 -->
             <div class="info-card">
               <h3 class="card-city">Brisbane</h3>
               <p class="card-description">
@@ -102,8 +89,6 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 路易斯维尔卡片 -->
             <div class="info-card">
               <h3 class="card-city">Louisville</h3>
               <p class="card-description">
@@ -119,8 +104,6 @@
               </div>
               <a href="#" class="card-link">Details →</a>
             </div>
-
-            <!-- 赫尔辛基卡片 -->
             <div class="info-card">
               <h3 class="card-city">Helsinki</h3>
               <p class="card-description">
@@ -132,7 +115,6 @@
         </div>
       </div>
     </section>
-    <!-- 新增：功能特性卡片区域 (三张卡片) -->
     <section class="feature-cards">
       <div class="container">
         <div class="features-grid">
@@ -156,8 +138,6 @@
         </div>
       </div>
     </section>
-
-    <!-- 目标追踪区域 -->
     <section class="goals1" id="Home">
       <div class="container goals1-container">
         <div class="section1-left">
@@ -215,16 +195,12 @@
         </div>
       </div>
     </section>
-
-    <!-- CTA 区域 -->
     <section class="cta">
       <div class="container cta-container">
         <h2>Ready to get started?</h2>
         <p>The world beckons;seize its grand offerings now!</p>
       </div>
     </section>
-
-    <!-- 页脚 -->
     <footer class="footer" id="contact">
       <div class="container">
         <div class="footer-grid">
@@ -372,7 +348,7 @@ export default {
   transform: translateY(-1px);
   opacity: 0.9;
 }
-/* Hero 区域 */
+
 .hero {
   background: linear-gradient(to bottom, #7096d1, #ffffff);
   padding: 120px 0 80px;
@@ -415,7 +391,7 @@ export default {
   margin: 0 auto 32px;
   line-height: 1.6;
 }
-/* 右侧卡片区域 */
+
 .hero-right {
   flex: 1;
   max-height: 80vh;
@@ -424,7 +400,6 @@ export default {
   margin-left: 600px;
 }
 
-/* 自定义滚动条 */
 .hero-right::-webkit-scrollbar {
   width: 6px;
 }
@@ -525,7 +500,7 @@ export default {
   gap: 8px;
   color: #6366f1;
 }
-/* 新增：功能特性卡片区域 */
+
 .feature-cards {
   padding: 40px 0 0;
   background: #ffffff;
@@ -573,7 +548,7 @@ export default {
   color: #64748b;
   line-height: 1.6;
 }
-/* 通用区域样式 */
+
 section {
   padding: 0 0;
 }
@@ -632,7 +607,6 @@ section {
   padding-bottom: 150px;
 }
 
-/* 用户评价 */
 .section-header p {
   color: #a3a3a3;
   text-align: center;
@@ -683,7 +657,6 @@ section {
   color: #a3a3a3;
 }
 
-/* CTA 区域 */
 .cta {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
   border-radius: 32px;
@@ -705,7 +678,6 @@ section {
   margin-bottom: 32px;
 }
 
-/* 页脚 */
 .footer {
   background: #ffffff;
   padding: 60px 0 30px;
@@ -783,7 +755,6 @@ section {
   font-size: 14px;
 }
 
-/* 响应式 */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 36px;
