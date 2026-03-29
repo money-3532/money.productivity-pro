@@ -304,7 +304,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   background: rgba(248, 248, 248, 0.95);
   backdrop-filter: blur(10px);
   padding: 20px 0;
@@ -313,33 +313,30 @@ export default {
 }
 
 .nav-container {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 0 40px;
-  gap: 80px;
 }
 
 .logo {
+  position: relative;
   font-size: 40px;
   font-weight: bold;
   background: linear-gradient(135deg, #4167b1, #5b8ad6);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .nav-links {
   display: flex;
   font-size: 20px;
   gap: 100px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -359,17 +356,16 @@ export default {
   padding: 12px 30px;
   border-radius: 30px;
   font-size: 25px;
-  position: absolute;
+  position: relative;
   right: 40px;
   top: 50%;
-  transform: translateY(-50%);
   font-weight: 500;
   transition:
     transform 0.3s,
     opacity 0.3s;
 }
 .btn-signup:hover {
-  transform: translateY(-1px);
+  transform: translateY(calc(-50%-1px));
   opacity: 0.9;
 }
 /* Hero 区域 */
@@ -379,22 +375,26 @@ export default {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
-
-.hero-title {
+.hero-left {
   position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+  padding-left: 15%;
+  width: 45%;
+}
+.hero-title {
   font-size: 80px;
   font-weight: 800;
-  top: 50%;
-  left: 15%;
-  transform: translateY(-50%);
-  max-width: 600px;
   line-height: 1.5;
-  margin-bottom: 24px;
   color: #2a3646;
-  margin: 0;
+  margin: 0 0 24px 0;
 }
 
 .gradient-text {
@@ -405,10 +405,6 @@ export default {
 }
 
 .hero-subtitle {
-  position: absolute;
-  top: calc(50% + 250px);
-  left: 20%;
-  transform: translateY(-50%);
   font-size: 18px;
   color: #a3a3a3;
   max-width: 600px;
@@ -417,7 +413,12 @@ export default {
 }
 /* 右侧卡片区域 */
 .hero-right {
-  flex: 1;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  max-width: 500px;
   max-height: 80vh;
   overflow-y: auto;
   padding: 0 10px 0;
@@ -714,7 +715,7 @@ section {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 40px;
 }
@@ -784,9 +785,35 @@ section {
 }
 
 /* 响应式 */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+  }
+
   .hero-title {
     font-size: 36px;
+  }
+
+  .hero-left {
+    width: 80%;
+    padding-left: 5%;
+    position: relative;
+    top: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .hero-right {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 90%;
+    margin: 40px auto 0;
+    max-height: none;
   }
 
   .nav-links {
