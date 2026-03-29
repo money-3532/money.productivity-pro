@@ -281,7 +281,7 @@ export default {
           role: 'Director,Producer',
         },
         {
-          quote: 'I love the simplicity and effecttiveness of ProductivityPro.Highly recommended!',
+          quote: 'I love the simplicity and effectiveness of ProductivityPro.Highly recommended!',
           name: 'Alex M',
           role: 'Directer,Producer',
         },
