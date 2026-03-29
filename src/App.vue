@@ -132,7 +132,6 @@
         </div>
       </div>
     </section>
-    <!-- 新增：功能特性卡片区域 (三张卡片) -->
     <section class="feature-cards">
       <div class="container">
         <div class="features-grid">
@@ -156,8 +155,6 @@
         </div>
       </div>
     </section>
-
-    <!-- 目标追踪区域 -->
     <section class="goals1" id="Home">
       <div class="container goals1-container">
         <div class="section1-left">
@@ -191,7 +188,6 @@
         </div>
       </div>
     </section>
-    <!-- 用户评价 -->
     <section class="testimonials" id="testimonials">
       <div class="container">
         <div class="section-header">
@@ -215,16 +211,12 @@
         </div>
       </div>
     </section>
-
-    <!-- CTA 区域 -->
     <section class="cta">
       <div class="container cta-container">
         <h2>Ready to get started?</h2>
         <p>The world beckons;seize its grand offerings now!</p>
       </div>
     </section>
-
-    <!-- 页脚 -->
     <footer class="footer" id="contact">
       <div class="container">
         <div class="footer-grid">
@@ -298,7 +290,6 @@ export default {
   },
 }
 </script>
-
 <style scoped>
 .navbar {
   position: fixed;
@@ -411,7 +402,7 @@ export default {
   margin: 0 auto 32px;
   line-height: 1.6;
 }
-/* 右侧卡片区域 */
+
 .hero-right {
   position: absolute;
   right: 10%;
@@ -425,7 +416,6 @@ export default {
   margin-left: 600px;
 }
 
-/* 自定义滚动条 */
 .hero-right::-webkit-scrollbar {
   width: 6px;
 }
@@ -574,7 +564,6 @@ export default {
   color: #64748b;
   line-height: 1.6;
 }
-/* 通用区域样式 */
 section {
   padding: 0 0;
 }
@@ -633,7 +622,6 @@ section {
   padding-bottom: 150px;
 }
 
-/* 用户评价 */
 .section-header p {
   color: #a3a3a3;
   text-align: center;
@@ -684,7 +672,7 @@ section {
   color: #a3a3a3;
 }
 
-/* CTA 区域 */
+
 .cta {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
   border-radius: 32px;
@@ -706,7 +694,7 @@ section {
   margin-bottom: 32px;
 }
 
-/* 页脚 */
+
 .footer {
   background: #ffffff;
   padding: 60px 0 30px;
@@ -784,7 +772,6 @@ section {
   font-size: 14px;
 }
 
-/* 响应式 */
 @media (max-width: 992px) {
   .hero {
     display: flex;
