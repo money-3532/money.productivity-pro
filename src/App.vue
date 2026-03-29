@@ -36,6 +36,8 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 班加罗尔卡片 -->
             <div class="info-card">
               <h3 class="card-city">Bengaluru</h3>
               <p class="card-description">
@@ -43,11 +45,15 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 加德满都卡片 -->
             <div class="info-card">
               <h3 class="card-city">Kathmandu</h3>
               <p class="card-description">When you enter into any new area</p>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 墨尔本卡片 -->
             <div class="info-card">
               <h3 class="card-city">Melbourne</h3>
               <p class="card-description">
@@ -55,6 +61,8 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 卡萨布兰卡卡片 -->
             <div class="info-card">
               <h3 class="card-city">Casablanca</h3>
               <p class="card-description">
@@ -67,6 +75,8 @@
               </div>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 吉隆坡卡片 -->
             <div class="info-card">
               <h3 class="card-city">Kuala Lumpur</h3>
               <p class="card-description">
@@ -74,6 +84,8 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 布里斯托尔卡片 -->
             <div class="info-card">
               <h3 class="card-city">Bristol</h3>
               <p class="card-description">
@@ -82,6 +94,7 @@
               <a href="#" class="card-link">Details →</a>
             </div>
 
+            <!-- 布里斯班卡片 -->
             <div class="info-card">
               <h3 class="card-city">Brisbane</h3>
               <p class="card-description">
@@ -89,6 +102,8 @@
               </p>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 路易斯维尔卡片 -->
             <div class="info-card">
               <h3 class="card-city">Louisville</h3>
               <p class="card-description">
@@ -104,6 +119,8 @@
               </div>
               <a href="#" class="card-link">Details →</a>
             </div>
+
+            <!-- 赫尔辛基卡片 -->
             <div class="info-card">
               <h3 class="card-city">Helsinki</h3>
               <p class="card-description">
@@ -115,6 +132,7 @@
         </div>
       </div>
     </section>
+    <!-- 新增：功能特性卡片区域 (三张卡片) -->
     <section class="feature-cards">
       <div class="container">
         <div class="features-grid">
@@ -138,6 +156,8 @@
         </div>
       </div>
     </section>
+
+    <!-- 目标追踪区域 -->
     <section class="goals1" id="Home">
       <div class="container goals1-container">
         <div class="section1-left">
@@ -195,12 +215,16 @@
         </div>
       </div>
     </section>
+
+    <!-- CTA 区域 -->
     <section class="cta">
       <div class="container cta-container">
         <h2>Ready to get started?</h2>
         <p>The world beckons;seize its grand offerings now!</p>
       </div>
     </section>
+
+    <!-- 页脚 -->
     <footer class="footer" id="contact">
       <div class="container">
         <div class="footer-grid">
@@ -280,7 +304,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   background: rgba(248, 248, 248, 0.95);
   backdrop-filter: blur(10px);
   padding: 20px 0;
@@ -289,33 +313,30 @@ export default {
 }
 
 .nav-container {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 0 40px;
-  gap: 80px;
 }
 
 .logo {
+  position: relative;
   font-size: 40px;
   font-weight: bold;
   background: linear-gradient(135deg, #4167b1, #5b8ad6);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .nav-links {
   display: flex;
   font-size: 20px;
   gap: 100px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -335,42 +356,45 @@ export default {
   padding: 12px 30px;
   border-radius: 30px;
   font-size: 25px;
-  position: absolute;
+  position: relative;
   right: 40px;
   top: 50%;
-  transform: translateY(-50%);
   font-weight: 500;
   transition:
     transform 0.3s,
     opacity 0.3s;
 }
 .btn-signup:hover {
-  transform: translateY(-1px);
+  transform: translateY(calc(-50%-1px));
   opacity: 0.9;
 }
-
+/* Hero 区域 */
 .hero {
   background: linear-gradient(to bottom, #7096d1, #ffffff);
   padding: 120px 0 80px;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
-
-.hero-title {
+.hero-left {
   position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+  padding-left: 15%;
+  width: 45%;
+}
+.hero-title {
   font-size: 80px;
   font-weight: 800;
-  top: 50%;
-  left: 15%;
-  transform: translateY(-50%);
-  max-width: 600px;
   line-height: 1.5;
-  margin-bottom: 24px;
   color: #2a3646;
-  margin: 0;
+  margin: 0 0 24px 0;
 }
 
 .gradient-text {
@@ -381,25 +405,27 @@ export default {
 }
 
 .hero-subtitle {
-  position: absolute;
-  top: calc(50% + 250px);
-  left: 20%;
-  transform: translateY(-50%);
   font-size: 18px;
   color: #a3a3a3;
   max-width: 600px;
   margin: 0 auto 32px;
   line-height: 1.6;
 }
-
+/* 右侧卡片区域 */
 .hero-right {
-  flex: 1;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  max-width: 500px;
   max-height: 80vh;
   overflow-y: auto;
   padding: 0 10px 0;
   margin-left: 600px;
 }
 
+/* 自定义滚动条 */
 .hero-right::-webkit-scrollbar {
   width: 6px;
 }
@@ -500,7 +526,7 @@ export default {
   gap: 8px;
   color: #6366f1;
 }
-
+/* 新增：功能特性卡片区域 */
 .feature-cards {
   padding: 40px 0 0;
   background: #ffffff;
@@ -548,7 +574,7 @@ export default {
   color: #64748b;
   line-height: 1.6;
 }
-
+/* 通用区域样式 */
 section {
   padding: 0 0;
 }
@@ -607,6 +633,7 @@ section {
   padding-bottom: 150px;
 }
 
+/* 用户评价 */
 .section-header p {
   color: #a3a3a3;
   text-align: center;
@@ -657,6 +684,7 @@ section {
   color: #a3a3a3;
 }
 
+/* CTA 区域 */
 .cta {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
   border-radius: 32px;
@@ -678,6 +706,7 @@ section {
   margin-bottom: 32px;
 }
 
+/* 页脚 */
 .footer {
   background: #ffffff;
   padding: 60px 0 30px;
@@ -686,7 +715,7 @@ section {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 40px;
 }
@@ -755,9 +784,36 @@ section {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
+/* 响应式 */
+@media (max-width: 992px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+  }
+
   .hero-title {
     font-size: 36px;
+  }
+
+  .hero-left {
+    width: 80%;
+    padding-left: 5%;
+    position: relative;
+    top: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .hero-right {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 90%;
+    margin: 40px auto 0;
+    max-height: none;
   }
 
   .nav-links {
@@ -787,3 +843,4 @@ section {
   }
 }
 </style>
+
